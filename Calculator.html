@@ -1,0 +1,25 @@
+<!-- example on JS -->
+<!DOCTYPE html>
+<html lang="en">
+ <body>
+	<div align="center">
+		<div style="width:300px; background:#ccffff;">
+			<h2>Arithmetic Calculator</h2>
+			<label>First Number</label> <bR>
+			<input type="text" id="firstNum"> 
+			<br> <bR>
+			<label>Second Number</label> <bR>
+			<input type="text" id="secNum"> 
+			<br> <br>
+			<button onclick="result.value = 'Sum  : '+ (parseInt(firstNum.value) + parseInt(secNum.value))">Add</button>
+			<button onclick="result.value = 'Sub  : '+ (parseInt(firstNum.value) - parseInt(secNum.value))">Sub</button>
+			<button onclick="result.value = 'Product  : '+ (firstNum.value*secNum.value)">Prod</button>
+			<button onclick="result.value = 'Div  : '+ (firstNum.value/secNum.value)">Div</button>
+			<button onclick="result.value = 'Mod  : '+ (firstNum.value%secNum.value)">Mod</button>
+			<button onclick="result.value = 'Power  : '+ Math.pow(firstNum.value, secNum.value)">Pow</button>
+			<bR> <bR>
+			<output id="result" style="color:blue; font-size:20px;"> </output>
+		</div>
+	</div>
+ </body>
+</html>
