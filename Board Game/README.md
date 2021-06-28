@@ -1,6 +1,5 @@
-# dice-roller
+# Dice-Roller
 
-A handy dandy dice roller for table-top gaming. [Live on GitHub Pages](https://seanmcp.github.io/dice-roller/)
 
 ## About
 
