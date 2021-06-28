@@ -1,0 +1,132 @@
+.modal-container {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+}
+
+.modal-overlay {
+    background: rgba(0, 0, 0, 0.4);
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.modal-menu {
+  background: white;
+  border-radius: 12px;
+  display: flex;
+  flex-flow: column nowrap;
+  list-style: none;
+  max-width: 240px;
+  padding: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.modal-menu li {
+    color: gray;
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+.modal-menu li.button {
+    align-items: center;
+    display: flex;
+}
+
+.modal-menu li span,
+.modal-menu li.button {
+    cursor: pointer;
+}
+
+.modal-menu li.button:hover,
+.modal-menu li span:hover {
+    color: #039BE5;
+}
+
+.modal-menu li.button i {
+    margin-right: 6px;
+}
+
+.modal-menu li:last-of-type {
+    border-color: transparent;
+}
+
+.modal-menu li.heading {
+    align-items: center;
+    display: flex;
+    font-size: 150%;
+    font-weight: bold;
+    justify-content: space-between;
+}
+
+.modal-menu.create li:last-of-type {
+  display: flex;
+  border-bottom: 0;
+  justify-content: space-between;
+}
+
+.custom-die {
+    align-items: center;
+    display: flex;
+    position: relative;
+    transition: all 150ms ease-in-out;
+}
+
+.custom-die input {
+    background: #eee;
+    border-radius: 3px;
+    border: 0;
+    flex-grow: 1;
+    padding: 6px;
+}
+
+.custom-die input:focus {
+    outline: none;
+}
+
+.custom-die .create {
+    margin-left: 12px;
+    padding: 0;
+}
+
+.custom-die .create:hover {
+    color: #039BE5;
+}
+
+.custom-die.error
+, .custom-die .error-message
+{
+    border: 1px solid #FB8C00;
+    border-bottom-left-radius: 0;
+}
+
+.custom-die .error-message {
+    align-items: center;
+    animation: pop-in 150ms ease-in-out;
+    background: #FFE0B2;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    color: #F57C00;
+    display: flex;
+    font-size: 12px;
+    left: -1px;
+    padding: 6px;
+    position: absolute;
+    top: 100%;
+}
+
+.custom-die .error-message i {
+    /* color: #FB8C00; */
+    margin-right: 3px;
+}
+
+.emoji.li {
+	margin-right: 6px;
+}

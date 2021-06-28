@@ -1,0 +1,44 @@
+.settlers-red {
+  background: #C62828;
+  color: #FDD835;
+}
+
+.settlers-yellow {
+  background: #FDD835;
+  color: #C62828;
+}
+
+.inverted {
+  background: #263238;
+  color: #ECEFF1;
+}
+
+.classic {
+  background: #ECEFF1;
+  color: #263238;
+}
+
+.green {
+  background: #43A047;
+  color: #ECEFF1;
+}
+
+.blue {
+  background: #1565C0;
+  color: #ECEFF1;
+}
+
+.purple {
+  background: #5E35B1;
+  color: #ECEFF1;
+}
+
+.orange {
+  background: #F57C00;
+  color: #ECEFF1;
+}
+
+.pink {
+  background: #EC407A;
+  color: #ECEFF1;
+}

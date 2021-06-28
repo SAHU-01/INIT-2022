@@ -1,0 +1,78 @@
+@import "./animation.css";
+
+.nav-bar {
+  align-items: center;
+  background: #263238;
+  bottom: 0;
+  color: white;
+  display: flex;
+  height: 84px;
+  justify-content: space-between;
+  /* padding: 12px 0 6px; */
+  position: fixed;
+  width: 100%;
+}
+
+.nav-bar,
+.total-panel {
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.nav-button:hover {
+  color: #80d8ff;
+}
+
+.nav-create {
+  margin-left: 12px;
+}
+.nav-settings {
+  margin-right: 12px;
+}
+
+.nav-roll {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.total-panel {
+  align-items: center;
+  background: #0091ea;
+  bottom: 84px;
+  color: white;
+  display: flex;
+  font-size: 36px;
+  height: 60px;
+  justify-content: center;
+  position: fixed;
+  transition: all 150ms ease-in-out;
+  width: 100%;
+}
+.total-panel b {
+  margin-left: 6px;
+}
+.total-panel.hide {
+  bottom: 24px;
+}
+
+.sound-indicator {
+  align-items: center;
+  animation: pop-in 150ms ease-in-out;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 48px;
+  bottom: 90px;
+  color: white;
+  display: flex;
+  height: 48px;
+  justify-content: center;
+  position: fixed;
+  right: 20px;
+  transition: all 150ms ease-in-out;
+  width: 48px;
+  z-index: 0;
+}
+
+.sound-indicator.hide {
+  animation: pop-out 150ms ease-in-out;
+  background: transparent;
+  color: rgba(0, 0, 0, 0.2);
+}
