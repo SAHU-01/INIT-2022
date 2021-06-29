@@ -1,0 +1,582 @@
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans');
+
+
+@media screen and (max-width: 400px) {
+    canvas {
+        border-top: 10px solid #d4d9e9;
+        border-bottom: 10px solid #d4d9e9;
+    }
+}
+
+@media screen and (min-width: 401px){
+    canvas {
+        border: 10px solid #d4d9e9;
+        border-radius: 20px;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    #logosize {
+        content: url("images/AquasmartSmall.png");
+        height: 60px;
+    }
+
+    #logo {
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+
+
+}
+
+@media screen and (min-width: 1001px){
+    #logo {
+        height: 70px;
+        width: 20%;
+    }
+
+    #logosize {
+        width: 100%;
+    }
+
+    body {
+        background-image: url('images/background2.jpg');
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+}
+
+@media screen and (max-height: 700px) and (min-height: 10px) {
+    #gamediv {
+        
+        top: -30px;
+    }
+
+    #startGame {
+        top: 220px;
+    }
+
+    canvas {        
+        top: -40px;
+    }
+
+    #option {
+        bottom: 193px;
+    }
+
+    #login {
+        bottom: 200px;
+    }
+    
+
+
+}
+
+@media screen and (min-height: 701px) {
+    #gamediv {
+            bottom: 50%;
+    }
+
+    #startGame {
+        bottom:50%;
+    }
+
+
+
+    #option {
+        
+        bottom:50%;
+    }
+
+    #login {
+        bottom: 50%;
+    }
+
+    #endGame {
+        bottom: 50%;
+    }
+
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+      
+body {
+    background-color: #000c47;
+    color: #000c47;
+    font-family: "IBM Plex Sans";
+    font-size: 13pt;
+}
+     
+#menu {
+    text-align: center;
+    margin-top: -2px;
+    margin-bottom: -80px;
+    width: 100%;
+    height: 65px;
+    background: #ebf0f9;
+    position: fixed;
+    top: 0;
+}
+      
+#navbar {
+    position: relative;
+    top: 5px;
+    margin: 0 auto;
+    font-size: 60%;
+    width: 200px;
+}
+
+#userName{
+    margin-top: -10px;
+    font-size: 13px;
+}
+      
+#userCity {
+    margin-top: 1px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#days {
+    float: right;
+    width: 100px;
+    margin-top: 6px;
+    margin-right: 7px;
+    font-weight: bold;
+    padding-right: 0px;
+}
+
+#userDays {
+    font-size: 20px;
+}
+
+#daysLeft {
+    margin-top: -10px;
+    font-size: 12px;
+}
+      
+#navbar > p {
+    font-family: "IBM Plex Sans";
+}
+      
+#cityname {        
+    list-style: none;
+    float: left;
+    margin-left: -20%;
+    line-height: 80px;
+    text-align: center;  
+}
+
+
+li > a {
+    display: block;
+    color: #000c47;
+    text-align: center;
+    text-decoration: none;
+}
+
+li > a:hover{
+    color: #0baef4;
+}
+      
+    
+#logo {
+    margin-top: 5px;
+    float: left;
+    /*width: 20%;*/
+}
+      
+
+#score {
+    color: #d4d9e9;
+    float: left;
+    text-align: center;
+    width: 100%;
+    font-family: "IBM Plex Sans";
+    font-size: 100%;
+}
+
+#score p {
+    margin: 0;
+    padding: 0;
+}
+
+#ignore {
+    display: none;
+}
+      
+#gamediv {
+    display: block;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,50%);
+}
+      
+canvas {        
+    margin: 0 auto;
+    display: block;
+    width: 400px;
+    height: 375px;
+    z-index: -1;
+    filter: blur(3px);
+    clear: both;
+
+}
+      
+#bottomdiv {
+    position: fixed;
+    bottom: 0;
+    height: 35px;
+    width: 100%;
+    background-color: #ebf0f9;
+    overflow: hidden;
+    margin: 0 auto;
+} 
+#bottomdiv ul {
+  list-style: none;
+  margin: 0 2px;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+#startGame {
+    border: 10px solid #d4d9e9;
+    position: absolute;
+    margin: 0 auto;
+    left: 50%;
+    transform: translate(-50%,50%);
+    border-radius: 20px;
+    text-align: center;
+    width: 300px;
+    background-color: #ebf0f9;
+    z-index: 1;
+    clear: left;
+    padding: 8px;
+    font-size: 10pt;
+}
+
+#noDays {
+    display: none;
+    border: 10px solid #d4d9e9;
+    position: absolute;
+    margin: 0 auto;
+    bottom:50%;
+    left: 50%;
+    transform: translate(-50%,50%);
+    border-radius: 20px;
+    text-align: center;
+    width: 300px;
+    background-color: #ebf0f9;
+    z-index: 1;
+    clear: left;
+    padding: 8px;
+    font-size: 10pt;
+}
+
+#login {
+    border: 10px solid #d4d9e9;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,50%);
+    border-radius: 20px;
+    text-align: center;
+    display: block;
+    width: 300px;
+    background-color: #ebf0f9;
+    z-index: 1;
+    clear: left;
+    font-size: 11pt;
+}
+
+.fb-share-button {
+    z-index: 1;
+}
+#login input {
+	font-size: 14pt;
+	border-radius: 10px;
+    border: none;
+
+    width: 90%;
+    margin-bottom: 3%;
+}
+
+#login form {
+    margin-top:8%;
+}
+#login button {
+  margin-top: 2%;
+  margin-left: -1px;
+  background-color: #ebf0f9;
+  border: none;
+  box-shadow: none;
+}
+
+#submit {
+    margin-left: 25%;
+}
+#userCity{
+  font-size: 200%;
+}
+     
+#about {
+    display: none;
+    margin: 0 auto;
+    border: 10px solid #d4d9e9;
+    border-radius: 20px;
+    position: relative;
+    width: 98%;
+    background-color: #ebf0f9;
+    z-index: 1;
+    clear: left;
+    padding: 0% 3%;
+}
+#about h2 {
+  text-align: center;
+}
+#help {
+    display: none;
+    margin: 0 auto;
+    border: 10px solid #d4d9e9;
+    border-radius: 20px;
+    position: relative;
+    top: 10px;
+    width: 98%;
+    max-width: 700px;
+    background-color: #ebf0f9;
+    z-index: 1;
+    clear: left;
+    padding: 0% 3%;
+    min-height: 300px;
+    height: 390px;
+    overflow: auto;
+}
+
+
+#help h2 {
+    float: left;
+    clear: none;
+    margin-bottom: 1em;
+}
+
+#help p ul {
+    padding-left: 3em;
+}
+
+#helpimg {
+    width: 80px;
+    padding: 1em;
+    padding-bottom: 0em;
+    float: left;
+    clear: left;
+}
+#closeHelp {
+    position:absolute;
+    top: 0px;
+    left: 0px;
+}
+#help p {
+    margin-left: 10px;
+    clear: both;
+}
+#forward{
+    position:absolute;
+    bottom:0px;
+    right: 0px;
+}
+#helpBack {
+    position:absolute;
+    bottom:0px;
+    left: 0px;
+}
+
+
+#option {
+    text-align: center;
+    display: block;
+    border: 10px solid #d4d9e9;
+    border-radius: 20px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,50%);
+    width: 350px;
+    height: 330px;
+    background-color: #ebf0f9;
+    z-index: 1;
+    font-size: 10pt;
+    overflow: auto;
+}
+
+#option button:hover {
+    color: #000c47;
+    background-color: #66ff99;
+}
+
+
+.optionButton {
+    width: 80%;
+    max-height: 50px;
+    height: auto;
+}
+
+.moreButton {
+    float: right;
+    width: 20%;
+    height: 30px;
+    line-height: 8px;
+}
+
+#option button {
+    background-color: #0baef4;
+    border-radius: 20px;
+    font-size: 10.5pt;
+    margin-bottom: 7px;
+    padding: 4px;
+}
+
+#opimg {
+    margin-left: -43px;
+
+}
+
+#optionExit {
+    height: 40px;
+    float: left;
+    padding: 3px;
+}
+
+#decision {
+    text-align: left;
+}
+
+#decision > p {
+    text-align: center;
+}
+
+#optionExit {
+    position: relative;
+}
+ 
+#picsOfUs {
+text-align: center;
+}
+#picsOfUs img {
+	width: 30%;
+    height: auto;
+}
+
+#scores {
+    margin: 0 auto;
+    border: 10px solid #d4d9e9;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 25px;
+    position: relative;
+    display: none;
+    width: 400px;
+    background-color: #ebf0f9;
+    z-index: 1;
+    clear: left;
+    height: 450px;
+}
+
+#guy {
+    margin-top: -25px;
+  background-color: #bff2f0;
+  padding: 0;
+  border: 0;
+  float: left;
+}
+
+.progress {
+ float: right;
+  width: 90%;
+  margin-right: -10px;
+
+}
+#inner {
+  background-color: #0baef4;
+}
+
+a:hover {
+    text-decoration: unset;
+    color: #66ff99;
+    cursor: pointer;
+}
+
+a {
+    color: #0baef4;
+}
+
+#endGame {
+    text-align: center;
+    top: 100px;
+    display: none;
+    font-family:  "IBM Plex Sans";
+    border: 10px solid #d4d9e9;
+    border-radius: 20px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,50%);
+    width: 400px;
+    height: 230px;
+    background-color: #ebf0f9;
+    z-index: 1;
+    clear: left;
+    padding: 0% 3%;
+}
+
+#youWin {
+    width: 100%;
+    font-weight: bold;
+    font-size: 200%;
+    color: #000c47;
+}
+
+#youLose {
+    width: 100%;
+    font-weight: bold;
+    font-size: 200%;
+    color: #000c47;
+}
+
+#endLogo {
+  width: 100px;  
+}
+
+#description1 {
+    display: none;
+}
+#description2 {
+    display: none;
+}
+#description3 {
+    display: none;
+}
+
+#dropBar {
+    margin: 0 auto;
+    margin-top: 85px;
+    width: 90%;
+    height: 50px;
+}
+
+#drop {
+    width: 60px;
+    float: left;
+    clear: both;
+    margin-right: 0%;
+    margin-left: -20px;
+    margin-top: -20px;
+    padding-right: 0%;
+}
+
+th {
+    text-align: center;
+}
