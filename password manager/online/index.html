@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>¡No PASSarán</title>
+	<link href="css/style.css" type="text/css" rel="stylesheet">
+</head>
+
+<body id="popup_page">
+
+<form autocomplete="off">
+	<fieldset id="pswd">
+		<h1>¡No PASSarán Online</h1>
+		<input id="dis_domain" type="checkbox">
+		<label for="dis_domain" data-l10n-id="dis_domain">Забыть про домен</label>
+
+		<fieldset id="site_d">
+			<label for="site" data-l10n-id="domain_title">Домен</label>
+			<input id="site">
+		</fieldset>
+
+		<label for="salt" data-l10n-id="salt_title">Соль</label>
+		<input id="salt">
+
+		<label for="algorithm" data-l10n-id="algorithm_title">Алгоритм шифрования</label>
+		<input id="algorithm">
+
+		<label for="hashtypeA" data-l10n-id="hash_type">Тип шифрования</label>
+		<select id="hashtypeA"></select>
+		<label for="password">Мастер-пароль</label>
+
+		<input id="password" type="password"><!--
+		--><input id="passshow" type="checkbox"><!--
+		--><label for="passshow"></label><!--
+		--><button id="passinsert">OK</button>
+	</fieldset>
+
+	<ul class="pbtn">
+		<li id="copy"><span data-l10n-id="copy">Копировать в буфер</span></li><!--
+		--><li data-show="showpass" id="showpassbtn"><span data-l10n-id="showpass">Показать пароль</span></li><!--
+		--><li data-show="filters"><span data-l10n-id="extended">Расширенные настройки</span></li><!--
+		-->	</ul>
+
+	<fieldset id="filters" class="hide pbtnH">
+		<input id="subdomain" type="checkbox">
+		<label for="subdomain" data-l10n-id="subdomain">Отключить поддомены</label>
+		<label for="trim" data-l10n-id="trim">Обрезать</label>
+		<input id="trim">
+
+		<label for="login" data-l10n-id="login">Логин (не работает!)</label>
+		<input id="login">
+	</fieldset>
+
+
+	<fieldset id="showpass" class="hide pbtnH">
+		<label for="showpassi" data-l10n-id="gen_password">Пароль</label>
+		<input id="showpassi">
+	</fieldset>
+
+</form>
+
+<script type="text/javascript" src="../data/js/functions.js"></script>
+<script type="text/javascript" src="../data/js/md5-min.js"></script>
+<script type="text/javascript" src="../data/js/you_shall_pass.js"></script>
+<script type="text/javascript" src="js/popup.js"></script>
+<script type="text/javascript" src="js/ZeroClipboard.min.js"></script>
+<script>
+	var client = new ZeroClipboard(document.getElementById("copy"));
+	client.on("ready", function(){
+		client.on("beforecopy", function(){
+			ZeroClipboard.setData( "text/plain", callGenPass());
+		});
+		client.on("aftercopy", function(event){
+			event.target.classList.remove('ok');
+			event.target.offsetWidth = event.target.offsetWidth;
+			event.target.classList.add('ok');
+		});
+	});
+</script>
+
+</body>
+</html>
