@@ -1,0 +1,4 @@
+pelican_pedro_small
+pelican_pedro_large
+panther_mowgli
+panther_bagheera
