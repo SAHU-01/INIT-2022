@@ -44,9 +44,7 @@ The source code can be found [here](https://github.com/alan-turing-institute/pla
 
 When developing agents we recommend creating a fork of the source code and using version control. If needed, facilitators will create GitHub repositories for your team under the Alan Turing Institute account.
 
-## :pencil: How to develop and train PlarkAI
 
-Please follow Montvieux instructions on how to develop and train your agents. Instructions can be found [here](https://github.com/alan-turing-institute/plark_ai_public/blob/master/Documentation/Hunting_The_Plark.pdf)
 
 ## :baseball: The Tournament
 
@@ -134,12 +132,7 @@ This may require you to install:
     > Again, if you are using Unix/Mac, you might want to use the helper functions `make pelican_push` or `make panther_push` but make sure that you have the `RL_TEAM_ID` environmental variable set as your team's name. If you are not sure what it should be, please check with your facilitator. The format is "team_X" where X is your teams number, for example "team_1", "team_2", etc.
 
 
-### Registering docker images for the tournament
 
-* Every team will have a corresponding .txt file in the [teams](teams) directory of this repository.  
-* Teams can register their agents each day of the challenge by adding their image tags in this file. 
-   - Please check [team_test.txt](teams/team_test.txt) for an example.
-* Unregistered agents (tags) will not be included in the daily tournaments.
 
 
 
