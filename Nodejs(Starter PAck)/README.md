@@ -26,9 +26,7 @@ Pokemon data is based on http://pokemongo.gamepress.gg.
 - [x] fuzzy search for Pokémon à la "did you mean x?"
 - [ ] translate moves in different languages
 
-# Contribution
 
-Ideas and Pull Requests welcome!
 
 # Privacy Policy
 
