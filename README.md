@@ -1,2 +1,2 @@
 # INIT-2022
-My init projects
+My init projects repository
