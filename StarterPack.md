@@ -8,7 +8,7 @@
  [Tensorflow Playlist-1](https://www.youtube.com/watch?v=tPYj3fFJGjk)
 
 ## Deep Learning Playlist:
-{Deep-Learning Playlist](http://deeplearning.ai/)
+[Deep-Learning Playlist](http://deeplearning.ai/)
 
 ## Learning Models
  
