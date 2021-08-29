@@ -1,14 +1,14 @@
 # Here is the beginner Starer Pack to ML
 
 ## Python Playlist:
-https://www.youtube.com/playlist?list=PL-osiE80TeTt2d9bfVyTiXJA-UTHn6WwU
+[Python bascis to Advance](https://www.youtube.com/playlist?list=PL-osiE80TeTt2d9bfVyTiXJA-UTHn6WwU)
 
 ## Tensor Flow Playlist:
- https://www.youtube.com/channel/UC0rqucBdTuFTjJiefW5t-IQ
- https://www.youtube.com/watch?v=tPYj3fFJGjk
+ [Tensorflow Playlist-1](https://www.youtube.com/channel/UC0rqucBdTuFTjJiefW5t-IQ)
+ [Tensorflow Playlist-1](https://www.youtube.com/watch?v=tPYj3fFJGjk)
 
 ## Deep Learning Playlist:
- http://deeplearning.ai/
+{Deep-Learning Playlist](http://deeplearning.ai/)
 
 ## Learning Models
  
